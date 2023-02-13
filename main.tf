@@ -1,15 +1,5 @@
-provider "aws" {
-  region = var.aws_region
-}
-
 data "aws_availability_zones" "available" {
   state = "available"
-}
-
-locals {
-  local_tags = merge(var.tags, {
-    region = var.aws_region
-  })
 }
 
 module "vpc" {
@@ -31,5 +21,5 @@ module "vpc" {
 
   enable_vpn_gateway = false
 
-  tags = local.local_tags
+  tags = local.tags
 }
