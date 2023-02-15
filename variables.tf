@@ -20,7 +20,7 @@ variable "tags" {
   description = "Tags for the networking resources"
   type        = map(string)
   default = {
-    project = "vpnbeast"
+    project = "thevpnbeast"
   }
 }
 
