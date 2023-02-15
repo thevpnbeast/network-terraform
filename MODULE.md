@@ -31,7 +31,6 @@
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Name of the region on AWS | `string` | `"us-east-1"` | no |
-| <a name="input_cidr"></a> [cidr](#input\_cidr) | CIDR for the VPC | `string` | `"10.0.0.0/16"` | no |
 | <a name="input_private_subnets"></a> [private\_subnets](#input\_private\_subnets) | List of private subnets to be used | `list(string)` | <pre>[<br>  "10.0.1.0/24",<br>  "10.0.2.0/24",<br>  "10.0.3.0/24"<br>]</pre> | no |
 | <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | List of public subnets to be used | `list(string)` | <pre>[<br>  "10.0.10.0/24",<br>  "10.0.11.0/24",<br>  "10.0.12.0/24"<br>]</pre> | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags for the networking resources | `map(string)` | <pre>{<br>  "project": "thevpnbeast"<br>}</pre> | no |

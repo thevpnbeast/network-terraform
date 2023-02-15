@@ -35,9 +35,3 @@ variable "public_subnets" {
   type        = list(string)
   default     = ["10.0.10.0/24", "10.0.11.0/24", "10.0.12.0/24"]
 }
-
-variable "cidr" {
-  description = "CIDR for the VPC"
-  type        = string
-  default     = "10.0.0.0/16"
-}
